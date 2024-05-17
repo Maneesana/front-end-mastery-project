@@ -1,10 +1,11 @@
 import React from 'react';
+import Introduction from './components/Introduction';
 
 const page = () => {
     return (
-        <h3 className="text-xl text-blue font-semibold">
-            This is home page for the portfolio
-        </h3>
+        <>
+            <Introduction />
+        </>
     );
 };
 
