@@ -6,7 +6,10 @@ interface PFLButtonProps {
 const PFLButton = ({ children }: PFLButtonProps) => {
     return (
         <>
-            <button> {children} </button>
+            <button className="p-2 px-4 rounded-md bg-portfolio-highlight text-white text-[18px]">
+                {' '}
+                {children}{' '}
+            </button>
         </>
     );
 };

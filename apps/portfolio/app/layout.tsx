@@ -3,6 +3,7 @@ import Link from 'next/link';
 
 // These styles apply to every route in the application
 import './globals.css';
+import PFLButton from './components/PFLButton';
 
 export const metadata: Metadata = {
     title: 'Create Next App',
@@ -17,13 +18,14 @@ export default function RootLayout({
     return (
         <html lang="en">
             <body className="text-white bg-portfolio-dark-background">
-                <div className="w-[85%] mx-auto">
-                    <div className="flex flex-items w-full gap-4 items-center justify-center">
+                <div className="w-[85%] mx-auto mt-5">
+                    <div className="flex flex-items w-full gap-10 items-center justify-center text-[18px]">
                         <Link href="/"> Home</Link>
                         <Link href="/"> About Me</Link>
                         <Link href="/"> Services</Link>
                         <Link href="/"> Projects</Link>
                         <Link href="/"> Blogs</Link>
+                        <PFLButton> Download CSV</PFLButton>
                     </div>
                     {children}
                 </div>
