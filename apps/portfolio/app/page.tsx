@@ -2,6 +2,8 @@ import React from 'react';
 import Introduction from './components/Introduction';
 import RectangularProgress from './components/RectangularProgress';
 import AboutMe from './components/AboutMe';
+import WorkExperience from './components/WorkExperience';
+import MyProjects from './components/MyProjects';
 
 const page = () => {
   const skills = [
@@ -20,6 +22,10 @@ const page = () => {
     <>
       <Introduction />
       <AboutMe skills={skills} aboutMe={aboutMe} />
+
+      <WorkExperience />
+
+      <MyProjects />
       <p className="text-[30px] p-2 text-center">
         The website is not completed yet. Still in progress...It will be
         completed soon.

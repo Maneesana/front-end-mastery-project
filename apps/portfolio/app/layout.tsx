@@ -31,7 +31,7 @@ export default function RootLayout({
           {children}
         </div>
         <footer>
-          <div className="flex items-center justify-center gap-10 my-10">
+          <div className="flex items-center justify-center gap-10 mb-3 mt-32">
             <Link
               href="https://twitter.com/maibammaneesana"
               rel="noopener noreferrer"
@@ -40,8 +40,8 @@ export default function RootLayout({
               <Image
                 src="/twitter.svg"
                 alt="Twitter icon"
-                width="45"
-                height="45"
+                width="35"
+                height="35"
               />
             </Link>
             <Link
@@ -52,8 +52,8 @@ export default function RootLayout({
               <Image
                 src="/linkedin.svg"
                 alt="Linkedin icon"
-                width="45"
-                height="45"
+                width="35"
+                height="35"
               />
             </Link>
             <Link
@@ -64,11 +64,19 @@ export default function RootLayout({
               <Image
                 src="/github.svg"
                 alt="GitHub icon"
-                width="45"
-                height="45"
+                width="35"
+                height="35"
               />
             </Link>
           </div>
+
+          <p className="text-center p-3 mb-3 text-2sm text-balance leading-relaxed">
+            &copy;{' '}
+            <span className="text-portfolio-highlight">
+              Maibam Maneesana Singh
+            </span>{' '}
+            All Rights Reserved Inc.
+          </p>
         </footer>
       </body>
     </html>
