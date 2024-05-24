@@ -1,6 +1,7 @@
 import React from 'react';
-
+import portfolioData from '../../public/my-portfolio.json';
 const WorkExperience = () => {
+  const workExperienceJobData = portfolioData.workExperience.jobs;
   enum FilledCircleConnectorVariants {
     PRIMARY = '#FD6F00',
     SECONDARY = '#eeeee4',
@@ -12,7 +13,7 @@ const WorkExperience = () => {
     variant: FilledCircleConnectorVariants;
   }) => {
     const circleCSS =
-      'p-3 mt-6 outline-dashed  outline-[3px] outline-offset-[7px] w-[30px] h-[30px] rounded-full';
+      ' p-3 mt-6 outline-dashed  outline-[3px] outline-offset-[7px] w-[30px] h-[30px] rounded-full';
     return (
       <div
         style={{
@@ -24,7 +25,7 @@ const WorkExperience = () => {
   };
   const DashedConnectionLine = () => {
     return (
-      <div className="absolute top-[72px] left-[48.825%] h-[96px] border-l-2 border-dashed border-white"></div>
+      <div className="absolute top-[65px] left-[48.825%] h-[160px] border-l-2 border-dashed border-white"></div>
     );
   };
 
@@ -49,25 +50,34 @@ const WorkExperience = () => {
   const RectangularExperienceCommonWidget = ({
     showConnectionLine,
     children,
+    jobDuration,
+    jobTitleAndLocation,
+    jobDesignation,
+    jobAchievement,
   }: {
     children: React.ReactNode;
     showConnectionLine: boolean;
+    jobTitleAndLocation: string;
+    jobDuration: string;
+    jobDesignation: string;
+    jobAchievement: string;
   }) => {
     return (
-      <div className="relative mb-[35px]">
+      <div className="mb-[35px]">
         <div className="w-full flex items-start justify-around gap-2 p-2 my-2">
           <WorkExperienceJobDescription
-            title="Google Bangalore"
-            description="July, 2024 - Present"
+            title={jobTitleAndLocation}
+            description={jobDuration}
           />
-          {children}
+          <div className="relative">
+            {children}
+            {showConnectionLine && <DashedConnectionLine />}
+          </div>
           <WorkExperienceJobDescription
-            title="Software Engineer I"
-            description="Lorem ipsum "
+            title={jobDesignation}
+            description={jobAchievement}
           />
         </div>
-
-        {showConnectionLine && <DashedConnectionLine />}
       </div>
     );
   };
@@ -79,29 +89,26 @@ const WorkExperience = () => {
         </h3>
 
         <div className="mt-20">
-          <RectangularExperienceCommonWidget showConnectionLine={true}>
-            <FilledCircleConnector
-              variant={FilledCircleConnectorVariants.PRIMARY}
-            />
-          </RectangularExperienceCommonWidget>
-
-          <RectangularExperienceCommonWidget showConnectionLine={true}>
-            <FilledCircleConnector
-              variant={FilledCircleConnectorVariants.PRIMARY}
-            />
-          </RectangularExperienceCommonWidget>
-
-          <RectangularExperienceCommonWidget showConnectionLine={true}>
-            <FilledCircleConnector
-              variant={FilledCircleConnectorVariants.PRIMARY}
-            />
-          </RectangularExperienceCommonWidget>
-
-          <RectangularExperienceCommonWidget showConnectionLine={false}>
-            <FilledCircleConnector
-              variant={FilledCircleConnectorVariants.SECONDARY}
-            />
-          </RectangularExperienceCommonWidget>
+          {workExperienceJobData.map((exp, i) => {
+            return (
+              <RectangularExperienceCommonWidget
+                key={exp.companyName}
+                jobDuration={`${exp.startDate} - ${exp.endDate}`}
+                jobAchievement={exp.achievement}
+                jobTitleAndLocation={exp.companyName + ' - ' + exp.location}
+                jobDesignation={exp.designation}
+                showConnectionLine={i !== workExperienceJobData.length - 1}
+              >
+                <FilledCircleConnector
+                  variant={
+                    (i + 1) % 2 == 0
+                      ? FilledCircleConnectorVariants.SECONDARY
+                      : FilledCircleConnectorVariants.PRIMARY
+                  }
+                />
+              </RectangularExperienceCommonWidget>
+            );
+          })}
         </div>
       </div>
     </>

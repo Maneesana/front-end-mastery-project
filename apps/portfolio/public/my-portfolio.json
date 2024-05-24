@@ -1,0 +1,118 @@
+{
+  "developerName": "Maibam Manesana Singh",
+  "developerRoleName": "Full Stack Developer",
+  "developerProfilePictureUrl": "/profile/developer-profile.jpg",
+
+  "developerBriefDetails": "I am a Full Stack Developer with 3 years of experience in developing web applications using PHP, MySQL, HTML, CSS, JavaScript, jQuery, AJAX, JSON, XML, Bootstrap, AngularJS, NodeJS, ExpressJS, MongoDB, RESTful API, Web Services, etc.",
+  "aboutMe": {
+    "picture": "/profile/about-me-picture.jpg",
+    "details": "I am a Full Stack Developer. I have 3 years of experience in developing web applications using PHP, MySQL, HTML, CSS, JavaScript, jQuery, AJAX, JSON, XML, Bootstrap, AngularJS, NodeJS, ExpressJS, MongoDB, RESTful API, Web Services, etc.",
+    "skills": [
+      {
+        "name": "React JS",
+        "level": "60"
+      },
+      {
+        "name": "Node JS",
+        "level": "60"
+      },
+      {
+        "name": "Typescript JS",
+        "level": "60"
+      },
+      {
+        "name": "GraphQL",
+        "level": "60"
+      },
+      {
+        "name": "Docker",
+        "level": "60"
+      },
+      {
+        "name": "PostgresQL",
+        "level": "60"
+      },
+      {
+        "name": "Nuxt JS",
+        "level": "60"
+      },
+      {
+        "name": "C#",
+        "level": "60"
+      },
+      {
+        "name": "C++",
+        "level": "60"
+      },
+      {
+        "name": "ASP .NET",
+        "level": "60"
+      },
+      {
+        "name": "Vue JS",
+        "level": "60"
+      }
+    ]
+  },
+  "workExperience": {
+    "jobs": [
+      {
+        "companyName": "Company 1",
+        "designation": "Application Engineer",
+        "achievement": "Optimized the performance of the application by 30% by refactoring the code and implementing the best practices.",
+        "startDate": "1st Jan,2023",
+        "endDate": "Present",
+        "location": "Location 2"
+      },
+      {
+        "companyName": "Company 2 ",
+        "designation": "Software Engineer",
+        "achievement": "Optimized the performance of the application by 30% by refactoring the code and implementing the best practices.",
+        "startDate": "1st Jun,2023",
+        "endDate": "Present",
+        "location": "Location 2"
+      }
+    ]
+  },
+  "projectsTechTags": [
+    "All",
+    "Front-end",
+    "Back-end",
+    "Full-stack",
+    "React JS",
+    "Node JS",
+    "Typescript JS",
+    "GraphQL",
+    "Docker",
+    "PostgresQL",
+    "Nuxt JS",
+    "C#",
+    "C++",
+    "ASP .NET",
+    "Vue JS"
+  ],
+  "projectBrief": "I am familiar with the following technologies: React JS, Node JS, Typescript JS, GraphQL, Docker, PostgresQL, Nuxt JS, C#, C++, ASP .NET, Vue JS, etc. I have worked on the following projects: Blog Post, E-commerce, etc",
+  "projects": [
+    {
+      "tags": ["Front-end", "Back-end"],
+      "title": "Blog Post",
+      "description": "A blog post application where user can create, read, update and delete blog posts.",
+      "technologies": "React JS, Node JS, Express JS, MongoDB, RESTful API, Web Services, etc.",
+      "projectImageUrl": "/github.svg",
+      "projectUrl": "https://github.com"
+    },
+    {
+      "tags": ["Front-end", "Back-end"],
+      "title": "Blog Post",
+      "description": "A blog post application where user can create, read, update and delete blog posts.",
+      "technologies": "React JS, Node JS, Express JS, MongoDB, RESTful API, Web Services, etc.",
+      "projectImageUrl": "/github.svg",
+      "projectUrl": "https://github.com"
+    }
+  ],
+  "socialLinks": {
+    "github": "https://github.com/Maneesana",
+    "linkedin": "https://www.linkedin.com/in/maibam-maneesana-singh-a113621a7/",
+    "twitter": "https://x.com/maibammaneesana"
+  }
+}
