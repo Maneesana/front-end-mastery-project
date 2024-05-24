@@ -6,11 +6,14 @@ interface PFLButtonProps {
 }
 const PFLButton = ({ children, variant = 'PRIMARY' }: PFLButtonProps) => {
   const bgColor = variant === 'PRIMARY' ? 'portfolio-highlight' : 'white';
-  const textColor = variant === 'PRIMARY' ? 'white' : 'black';
-  const btnStyle = `p-2 px-4 rounded-md bg-${bgColor} text-${textColor} text-[18px]`;
+  const textColor = variant === 'PRIMARY' ? '#fff' : '#000';
+  const btnStyle = `p-2 px-4 rounded-md bg-${bgColor} text-[18px]`;
   return (
     <>
-      <button className={btnStyle}> {children} </button>
+      <button style={{ color: textColor }} className={btnStyle}>
+        {' '}
+        {children}{' '}
+      </button>
     </>
   );
 };

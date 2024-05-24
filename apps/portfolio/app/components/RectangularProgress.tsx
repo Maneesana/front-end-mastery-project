@@ -1,12 +1,8 @@
 interface IRectangularProgressProps {
-  cssColor?: string;
   progress: number;
 }
-const RectangularProgress = ({
-  cssColor = 'portfolio-highlight',
-  progress,
-}: IRectangularProgressProps) => {
-  const progressInnerStyle = `relative h-[10px] p-1.5 rounded-md bg-${cssColor}`;
+const RectangularProgress = ({ progress }: IRectangularProgressProps) => {
+  const progressInnerStyle = `relative h-[10px] p-1.5 rounded-md bg-portfolio-highlight`;
   return (
     <div className="w-auto h-auto bg-white  p-0 rounded-md mt-3 mx-1">
       <div
