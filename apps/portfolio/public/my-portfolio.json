@@ -107,7 +107,7 @@
       "description": "A blog post application where user can create, read, update and delete blog posts.",
       "technologies": "React JS, Node JS, Express JS, MongoDB, RESTful API, Web Services, etc.",
       "projectImageUrl": "/github.svg",
-      "projectUrl": "https://github.com"
+      "projectUrl": "https://github.com/Maneesana/nuxt-js-poc-hm"
     }
   ],
   "socialLinks": {

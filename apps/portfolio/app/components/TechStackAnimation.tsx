@@ -78,6 +78,7 @@ const TechStackAnimation = () => {
             {data.slice(0, 8).map((item) => {
               return (
                 <Image
+                  key={item.src}
                   src={item.src}
                   className="p-3 hover:animate-bouncy-shaky cursor-pointer"
                   alt={item.alt}
@@ -91,6 +92,7 @@ const TechStackAnimation = () => {
             {data.slice(6).map((item) => {
               return (
                 <Image
+                  key={item.src}
                   src={item.src}
                   className=" p-3 hover:animate-bouncy-shaky cursor-pointer"
                   alt={item.alt}

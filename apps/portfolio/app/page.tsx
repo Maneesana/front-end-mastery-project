@@ -24,10 +24,6 @@ const page = () => {
       <WorkExperience />
       <TechStackAnimation />
       <MyProjects />
-      <p className="text-[20px] p-2 mt-4 text-center">
-        The website is not completed yet. Still in progress...It will be
-        completed soon.
-      </p>
     </>
   );
 };
