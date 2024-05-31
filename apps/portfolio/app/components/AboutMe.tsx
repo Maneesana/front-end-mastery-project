@@ -10,7 +10,7 @@ interface IAboutMe {
 const AboutMe = ({ skills, aboutMe }: IAboutMe) => {
   return (
     <>
-      <div className="flex  justify-center items-center gap-16 p-3 my-12">
+      <div id="about-me" className="flex  justify-center items-center gap-16 p-3 my-12">
         <div className="rounded-md p-1 bg-slate-100 ">
           <Image
             alt="developer-image"

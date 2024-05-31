@@ -22,10 +22,10 @@ export default function RootLayout({
         <div className="w-[85%] mx-auto mt-5">
           <div className="flex flex-items w-full gap-10 items-center justify-center text-[18px]">
             <Link href="/"> Home</Link>
-            <Link href="/"> About Me</Link>
-            <Link href="/"> Services</Link>
-            <Link href="/"> Projects</Link>
-            <Link href="/"> Blogs</Link>
+            <Link href="#about-me"> About Me</Link>
+            {/* <Link href="/"> Services</Link> */}
+            <Link href="#projects"> Projects</Link>
+            <Link href="/blogs"> Blogs</Link>
             <PFLButton> Download CSV</PFLButton>
           </div>
           {children}

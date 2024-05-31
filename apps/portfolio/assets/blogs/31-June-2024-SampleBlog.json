@@ -1,0 +1,23 @@
+{
+  "blogTitle": "This is blog title 1",
+  "blogImage": "/main-blog-image",
+  "publishAt": "31-06-2024",
+  "readingTime": "10mins",
+  "blogBodyContent": [
+    {
+      "subContentImage": null,
+      "subContentText": "This is sub content 1",
+      "subContentOrder": "IMAGE-DOWN"
+    },
+    {
+      "subContentImage": null,
+      "subContentText": "This is sub content 2",
+      "subContentOrder": "IMAGE-UP"
+    },
+    {
+      "subContentImage": null,
+      "subContentText": "This is sub content 3",
+      "subContentOrder": "DO-NOT-SHOW"
+    }
+  ]
+}
