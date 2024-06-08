@@ -12,7 +12,7 @@ const PFLButton = ({
 }: PFLButtonProps) => {
   const bgColor = variant === 'PRIMARY' ? 'portfolio-highlight' : 'white';
   const textColor = variant === 'PRIMARY' ? '#fff' : '#000';
-  const btnStyle = `p-2 px-4 rounded-md bg-${bgColor} text-[18px]`;
+  const btnStyle = ` sm:px-5 sm:py-1 md:p-2 md:px-4 rounded-md bg-${bgColor} `;
   return (
     <>
       <button

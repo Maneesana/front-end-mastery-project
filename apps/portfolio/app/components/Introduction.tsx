@@ -6,7 +6,7 @@ const Introduction = () => {
   const developeProfileDescription = portfolioData.developerBriefDetails;
   return (
     <>
-      <div className="w-full mt-[55px]">
+      <div className="w-full mt-[55px] overflow-overflow">
         <div className="flex items-center gap-20">
           <div>
             <p className="m-[0px] ">
@@ -32,8 +32,8 @@ const Introduction = () => {
                 alt="developer-image"
                 src={portfolioData.developerProfilePictureUrl}
                 className="w-auto h-auto"
-                width="1000"
-                height="850"
+                width="300"
+                height="400"
               />
             </h5>
           </div>

@@ -6,6 +6,12 @@ module.exports = {
     './components/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
+    screens: {
+      sm: '300px',
+      md: '820px',
+      lg: '1200px',
+    },
+
     extend: {
       animation: {
         marquee: 'marquee 20s linear infinite',
