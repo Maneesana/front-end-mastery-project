@@ -5,16 +5,19 @@
   "readingTime": "10mins",
   "blogBodyContent": [
     {
+      "id": "1",
       "subContentImage": null,
       "subContentText": "This is sub content 1",
       "subContentOrder": "IMAGE-DOWN"
     },
     {
+      "id": "2",
       "subContentImage": null,
       "subContentText": "This is sub content 2",
       "subContentOrder": "IMAGE-UP"
     },
     {
+      "id": "3",
       "subContentImage": null,
       "subContentText": "This is sub content 3",
       "subContentOrder": "DO-NOT-SHOW"

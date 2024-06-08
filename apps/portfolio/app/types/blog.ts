@@ -6,6 +6,7 @@ export enum BlogBodyContentDisplayOrder {
   PUT_NOTHING = 'DO-NOT-SHOW',
 }
 export interface IBlogBodyContent {
+  id: string;
   subContentImage: string | null;
   subContentText: string;
   subContentOrder: BlogBodyContentDisplayOrder;
