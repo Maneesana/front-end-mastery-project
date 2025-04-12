@@ -17,7 +17,7 @@ const AboutMe = ({ skills, aboutMe }: IAboutMe) => {
             src={portfolioData.aboutMe.picture}
             width="1500"
             height="1800"
-            className="w-full md:w-[500px] lg:w-[1000px] h-auto"
+            className="w-full md:w-[600px] lg:w-[1900px] h-auto"
           />
         </div>
 

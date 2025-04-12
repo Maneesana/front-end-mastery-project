@@ -108,7 +108,7 @@ const MyProjects = () => {
 
       {projectData.length === 0 && (
         <p className="text-center text-xl md:text-2xl mt-10">
-          There is currently no project for the selected technology right now.
+          No projects are currently available for the selected technology.
         </p>
       )}
     </div>

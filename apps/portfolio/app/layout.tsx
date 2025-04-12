@@ -30,10 +30,18 @@ export default function RootLayout({
                 target="_blank"
               >
                 <Image
-                  src="/twitter.svg"
+                  src="/twitter-light.svg"
                   alt="Twitter icon"
                   width="35"
                   height="35"
+                  className="block dark:hidden"
+                />
+                <Image
+                  src="/twitter-dark.svg"
+                  alt="Twitter icon"
+                  width="35"
+                  height="35"
+                  className="hidden dark:block"
                 />
               </Link>
               <Link
@@ -42,10 +50,18 @@ export default function RootLayout({
                 target="_blank"
               >
                 <Image
-                  src="/linkedin.svg"
+                  src="/linkedin-light.svg"
                   alt="Linkedin icon"
                   width="35"
                   height="35"
+                  className="block dark:hidden"
+                />
+                <Image
+                  src="/linkedin-dark.svg"
+                  alt="Linkedin icon"
+                  width="35"
+                  height="35"
+                  className="hidden dark:block"
                 />
               </Link>
               <Link
@@ -54,10 +70,18 @@ export default function RootLayout({
                 target="_blank"
               >
                 <Image
-                  src="/github.svg"
+                  src="/github-light.svg"
                   alt="GitHub icon"
                   width="35"
                   height="35"
+                  className="block dark:hidden"
+                />
+                <Image
+                  src="/github-dark.svg"
+                  alt="GitHub icon"
+                  width="35"
+                  height="35"
+                  className="hidden dark:block"
                 />
               </Link>
             </div>
