@@ -1,7 +1,31 @@
-import React from 'react';
+'use client';
+import React, { useRef, useEffect, useState } from 'react';
 import portfolioData from '../../public/my-portfolio.json';
+
 const WorkExperience = () => {
   const workExperienceJobData = portfolioData.workExperience.jobs;
+  const [lineHeights, setLineHeights] = useState<number[]>([]);
+  const circleRefs = useRef<(HTMLDivElement | null)[]>([]);
+
+  useEffect(() => {
+    // Calculate heights between circles
+    const heights = circleRefs.current.map((circle, index) => {
+      if (index === circleRefs.current.length - 1) return 0;
+      const currentCircle = circle;
+      const nextCircle = circleRefs.current[index + 1];
+      
+      if (currentCircle && nextCircle) {
+        const currentRect = currentCircle.getBoundingClientRect();
+        const nextRect = nextCircle.getBoundingClientRect();
+        // Calculate distance from bottom of current circle to top of next circle
+        return nextRect.top - (currentRect.top + currentRect.height);
+      }
+      return 0;
+    });
+
+    setLineHeights(heights);
+  }, []);
+
   enum FilledCircleConnectorVariants {
     PRIMARY = '#FD6F00',
     SECONDARY = '#eeeee4',
@@ -9,13 +33,18 @@ const WorkExperience = () => {
 
   const FilledCircleConnector = ({
     variant,
+    index,
   }: {
     variant: FilledCircleConnectorVariants;
+    index: number;
   }) => {
     const circleCSS =
       'p-3 mt-6 outline-dashed outline-[3px] outline-offset-[7px] w-[30px] h-[30px] rounded-full';
     return (
       <div
+        ref={(el) => {
+          circleRefs.current[index] = el;
+        }}
         style={{
           backgroundColor: variant,
         }}
@@ -23,9 +52,16 @@ const WorkExperience = () => {
       ></div>
     );
   };
-  const DashedConnectionLine = () => {
+
+  const DashedConnectionLine = ({ height }: { height: number }) => {
     return (
-      <div className="absolute top-[65px] left-[48.825%] h-[160px] border-l-2 border-dashed font-bold border-black dark:border-white hidden md:block"></div>
+      <div 
+        className="absolute left-[48.825%] border-l-2 border-dashed font-bold border-black dark:border-white hidden md:block"
+        style={{ 
+          top: '100%', // Start from the bottom of the circle
+          height: `${height}px`
+        }}
+      ></div>
     );
   };
 
@@ -53,6 +89,7 @@ const WorkExperience = () => {
     jobTitleAndLocation,
     jobDesignation,
     jobAchievement,
+    index,
   }: {
     children: React.ReactNode;
     showConnectionLine: boolean;
@@ -60,6 +97,7 @@ const WorkExperience = () => {
     jobDuration: string;
     jobDesignation: string;
     jobAchievement: string;
+    index: number;
   }) => {
     return (
       <div className="mb-[35px]">
@@ -70,7 +108,7 @@ const WorkExperience = () => {
           />
           <div className="relative">
             {children}
-            {showConnectionLine && <DashedConnectionLine />}
+            {showConnectionLine && <DashedConnectionLine height={lineHeights[index] || 0} />}
           </div>
           <WorkExperienceJobDescription
             title={jobDesignation}
@@ -80,6 +118,7 @@ const WorkExperience = () => {
       </div>
     );
   };
+
   return (
     <>
       <div className="px-4 md:px-6 lg:px-8">
@@ -97,6 +136,7 @@ const WorkExperience = () => {
                 jobTitleAndLocation={exp.companyName + ' - ' + exp.location}
                 jobDesignation={exp.designation}
                 showConnectionLine={i !== workExperienceJobData.length - 1}
+                index={i}
               >
                 <FilledCircleConnector
                   variant={
@@ -104,6 +144,7 @@ const WorkExperience = () => {
                       ? FilledCircleConnectorVariants.SECONDARY
                       : FilledCircleConnectorVariants.PRIMARY
                   }
+                  index={i}
                 />
               </RectangularExperienceCommonWidget>
             );
