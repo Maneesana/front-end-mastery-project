@@ -2,6 +2,7 @@
 import Link from 'next/link';
 import ThemeToggle from './ThemeToggle';
 import DownloadResumeButton from './DownloadResumeButton';
+import { Button } from '../../../../packages/ui/src/button';
 
 const Navigation = () => {
   const handleScroll = (e: React.MouseEvent<HTMLAnchorElement>, targetId: string) => {
@@ -12,6 +13,11 @@ const Navigation = () => {
       targetElement.scrollIntoView({ behavior: 'smooth' });
     }
   };
+
+  const openBlog=()=>{
+    const URL = "http://documentation.maibammaneesanasingh.studio/"
+    window.open(URL,"_blank")    
+  }
 
   return (
     <div className="w-auto mx-[5%] mt-5">
@@ -25,7 +31,7 @@ const Navigation = () => {
         <a href="#projects" onClick={(e) => handleScroll(e, 'projects')}>
           Projects
         </a>
-        <Link href="/blogs">Blogs</Link>
+        <button onClick={openBlog}>Blogs</button>
         <ThemeToggle />
         <DownloadResumeButton />
       </div>

@@ -67,14 +67,19 @@ const WorkExperience = () => {
 
   function WorkExperienceJobDescription({
     title,
+    subTitle,
     description,
   }: {
     title: string;
+    subTitle?:string;  
     description: string;
   }) {
     return (
       <div className="max-w-full md:max-w-[400px]">
         <h4 className="text-[25px] md:text-[35px] font-semibold mb-1 text-center md:text-left">{title}</h4>
+        {subTitle && <p className="text-[16px] italic md:text-[20px] leading-relaxed text-wrap h-auto py-1 text-center md:text-left">
+          {subTitle}
+        </p>}
         <p className="text-[16px] md:text-[20px] leading-relaxed text-wrap h-auto py-1 text-center md:text-left">
           {description}
         </p>
@@ -86,14 +91,16 @@ const WorkExperience = () => {
     showConnectionLine,
     children,
     jobDuration,
-    jobTitleAndLocation,
+    jobTitle,
+    location,
     jobDesignation,
     jobAchievement,
     index,
   }: {
     children: React.ReactNode;
     showConnectionLine: boolean;
-    jobTitleAndLocation: string;
+    jobTitle: string;
+    location: string,
     jobDuration: string;
     jobDesignation: string;
     jobAchievement: string;
@@ -103,7 +110,8 @@ const WorkExperience = () => {
       <div className="mb-[35px]">
         <div className="w-full flex flex-col md:flex-row items-center justify-around gap-8 md:gap-2 p-2 my-2">
           <WorkExperienceJobDescription
-            title={jobTitleAndLocation}
+            title={jobTitle}
+            subTitle={location}
             description={jobDuration}
           />
           <div className="relative">
@@ -132,8 +140,9 @@ const WorkExperience = () => {
               <RectangularExperienceCommonWidget
                 key={exp.companyName}
                 jobDuration={`${exp.startDate} - ${exp.endDate}`}
-                jobAchievement={exp.achievement}
-                jobTitleAndLocation={exp.companyName + ' - ' + exp.location}
+                jobAchievement={exp.achievement}                
+                jobTitle={exp.companyName}
+                location={exp.location}
                 jobDesignation={exp.designation}
                 showConnectionLine={i !== workExperienceJobData.length - 1}
                 index={i}

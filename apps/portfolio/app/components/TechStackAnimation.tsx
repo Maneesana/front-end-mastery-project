@@ -75,7 +75,7 @@ const TechStackAnimation = () => {
       <div className="bg-[#F2F4F7] p-4 md:p-6 rounded-md">
         <div className="flex flex-col gap-4 md:gap-6 justify-center items-center">
           <RightToLeftAnimation>
-            {data.slice(0, 8).map((item) => {
+            {data.slice(0,8).map((item) => {
               return (
                 <Image
                   key={item.src}
@@ -89,7 +89,7 @@ const TechStackAnimation = () => {
             })}
           </RightToLeftAnimation>
           <RightToLeftAnimation>
-            {data.slice(6).map((item) => {
+            {data.slice(8).map((item) => {
               return (
                 <Image
                   key={item.src}

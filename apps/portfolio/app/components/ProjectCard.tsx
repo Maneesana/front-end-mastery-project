@@ -12,8 +12,8 @@ const ProjectCard = ({
   projectImageUrl,
 }: IProjectCardProps) => {
   return (
-    <div className="mt-6 md:mt-10 flex flex-col items-center gap-3 justify-center h-full">
-      <div className="w-full h-[250px] md:h-[320px] bg-gray-light p-3 rounded-md cursor-pointer">
+    <div className="flex flex-col h-full bg-white dark:bg-slate-800 rounded-lg shadow-md overflow-hidden">
+      <div className="w-full h-[250px] md:h-[320px] bg-gray-light dark:bg-slate-700">
         <Image
           src={projectImageUrl}
           alt="project-image"
@@ -22,11 +22,12 @@ const ProjectCard = ({
           className="w-full h-full object-cover"
         />
       </div>
-      <h4 className="text-portfolio-highlight text-[16px] md:text-[18px] text-center">{projectName}</h4>
-
-      <h3 className="text-[16px] md:text-[20px] font-bold w-full text-pretty max-h-[320px] text-center">
-        {projectDescription}
-      </h3>
+      <div className="p-4 flex flex-col flex-grow">
+        <h4 className="text-portfolio-highlight text-[16px] md:text-[18px] font-semibold mb-2">{projectName}</h4>
+        <p className="text-[14px] md:text-[16px] text-gray-700 dark:text-gray-300 flex-grow">
+          {projectDescription}
+        </p>
+      </div>
     </div>
   );
 };

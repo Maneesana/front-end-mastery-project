@@ -11,13 +11,13 @@ const AboutMe = ({ skills, aboutMe }: IAboutMe) => {
   return (
     <>
       <div id="about-me" className="flex flex-col md:flex-row justify-center items-center gap-8 md:gap-16 p-3 my-8 md:my-12 px-4 md:px-6 lg:px-8">
-        <div className="rounded-md p-1 bg-slate-100 w-full md:w-auto">
+        <div className="rounded-md p-1 bg-slate-500 dark:bg-slate-200 w-full md:w-auto">
           <Image
             alt="developer-image"
             src={portfolioData.aboutMe.picture}
-            width="1200"
-            height="1500"
-            className="w-full h-auto"
+            width="1500"
+            height="1800"
+            className="w-full md:w-[500px] lg:w-[1000px] h-auto"
           />
         </div>
 

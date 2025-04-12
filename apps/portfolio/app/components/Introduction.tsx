@@ -48,7 +48,7 @@ const Introduction = () => {
               <span className="inline-block">
                 {showRole && (
                   <TypingAnimation
-                    text="A Full Stack Developer"
+                    text="A Software Engineer"
                     speed={90}
                     restartInterval={10000}
                   />
@@ -60,13 +60,13 @@ const Introduction = () => {
             </p>
             <PFLButton>Hire Me</PFLButton>
           </div>
-          <div className="bg-slate-200 dark:bg-slate-700 p-1 rounded-md flex flex-col items-center justify-center mt-8 md:mt-0 w-full md:w-auto">
+          <div className="bg-slate-500 dark:bg-slate-200 p-1 rounded-md flex flex-col items-center justify-center mt-8 md:mt-0 w-full md:w-auto">
             <Image
               alt="developer-image"
               src={portfolioData.developerProfilePictureUrl}
-              className="w-full md:w-[300px] lg:w-[650px] h-auto object-cover"
-              width="650"
-              height="800"
+              className="w-full md:w-[400px] lg:w-[800px] h-auto object-cover"
+              width="800"
+              height="1000"
               priority
             />
           </div>
