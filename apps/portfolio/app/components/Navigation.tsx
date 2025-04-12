@@ -88,7 +88,9 @@ const Navigation = () => {
           <button onClick={openBlog} className="font-medium">Blogs</button>
         </div>
         <div className="flex items-center ml-4 md:ml-6 lg:ml-8">
-          <ThemeToggle />
+          <div className="mr-6">
+            <ThemeToggle />
+          </div>
           <DownloadResumeButton />
         </div>
       </div>
