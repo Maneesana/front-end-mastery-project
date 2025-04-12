@@ -4,7 +4,7 @@ interface IRectangularProgressProps {
 const RectangularProgress = ({ progress }: IRectangularProgressProps) => {
   const progressInnerStyle = `relative h-[10px] p-1.5 rounded-md bg-portfolio-highlight`;
   return (
-    <div className="w-auto h-auto bg-white  p-0 rounded-md mt-3 mx-1">
+    <div className="w-auto h-auto dark:bg-white  dark:border-0 border-y-2 border-portfolio-highlight dark:p-0 rounded-md mt-3 mx-1">
       <div
         style={{
           width: `${progress > 100 ? progress % 100 : progress}%`,

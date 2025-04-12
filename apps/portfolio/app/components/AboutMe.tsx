@@ -15,14 +15,14 @@ const AboutMe = ({ skills, aboutMe }: IAboutMe) => {
           <Image
             alt="developer-image"
             src={portfolioData.aboutMe.picture}
-            width="1000"
-            height="1200"
+            width="1200"
+            height="1500"
             className="w-full h-auto"
           />
         </div>
 
         <div className="w-full md:w-auto">
-          <h3 className="text-[40px] md:text-[60px] text-white font-semibold my-3 text-center md:text-left">
+          <h3 className="text-[40px] md:text-[60px] text-gray-900 dark:text-white font-semibold my-3 text-center md:text-left">
             About me
           </h3>
           <p className="text-lg md:text-xl tracking-wide text-wrap leading-normal my-4 text-center md:text-left">

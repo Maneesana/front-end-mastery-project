@@ -25,7 +25,7 @@ const WorkExperience = () => {
   };
   const DashedConnectionLine = () => {
     return (
-      <div className="absolute top-[65px] left-[48.825%] h-[160px] border-l-2 border-dashed border-white hidden md:block"></div>
+      <div className="absolute top-[65px] left-[48.825%] h-[160px] border-l-2 border-dashed font-bold border-black dark:border-white hidden md:block"></div>
     );
   };
 

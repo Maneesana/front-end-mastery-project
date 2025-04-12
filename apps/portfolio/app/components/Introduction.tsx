@@ -15,23 +15,23 @@ const Introduction = () => {
                 {developerName}
               </span>
             </p>
-            <p className="text-[45px] md:text-[65px] lg:text-[85px] font-semibold text-white mt-[1px] p-0 m-0">
+            <p className="text-[45px] md:text-[65px] lg:text-[85px] font-semibold text-gray-900 dark:text-white mt-[1px] p-0 m-0">
               {' '}
               A Full Stack{' '}
               <span className="block md:ml-[25%] m-0 p-0">Developer</span>
             </p>
-            <p className="p-2 w-full md:w-[600px] text-[16px] md:text-[20px] mb-4 text-wrap leading-relaxed">
+            <p className="p-2 w-full md:w-[600px] text-[16px] md:text-[20px] mb-4 text-wrap leading-relaxed text-gray-800 dark:text-gray-200">
               {developeProfileDescription}
             </p>
             <PFLButton>Hire Me</PFLButton>
           </div>
-          <div className="bg-slate-200 p-1 rounded-md flex flex-col items-center justify-center mt-8 md:mt-0">
+          <div className="bg-slate-200 p-1 rounded-md flex flex-col items-center justify-center mt-8 md:mt-0 w-full md:w-auto">
             <Image
               alt="developer-image"
               src={portfolioData.developerProfilePictureUrl}
-              className="w-auto h-auto"
-              width="300"
-              height="400"
+              className="w-full md:w-[300px] lg:w-[650px] h-auto object-cover"
+              width="650"
+              height="800"
               priority
             />
           </div>

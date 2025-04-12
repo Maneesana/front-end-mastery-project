@@ -10,14 +10,13 @@ const PFLButton = ({
   variant = 'PRIMARY',
   onClick,
 }: PFLButtonProps) => {
-  const bgColor = variant === 'PRIMARY' ? 'portfolio-highlight' : 'white';
-  const textColor = variant === 'PRIMARY' ? '#fff' : '#000';
-  const btnStyle = ` sm:px-5 sm:py-1 md:p-2 md:px-4 rounded-md bg-${bgColor} `;
+  const bgColor = variant === 'PRIMARY' ? 'bg-white dark:bg-portfolio-highlight' : 'bg-portfolio-hightlight dark:bg-white';
+  const textColor = variant === 'PRIMARY' ? 'text-[#000] dark:text-[#fff]' : 'dark:text-[#000] text-[#fff]';
+  const btnStyle = ` sm:px-5 sm:py-1 md:p-2 md:px-4 rounded-md ${bgColor} ${textColor}`;
   return (
     <>
       <button
-        onClick={onClick}
-        style={{ color: textColor }}
+        onClick={onClick}        
         className={btnStyle}
       >
         {' '}
