@@ -61,7 +61,7 @@
       {
         "companyName": "Covalience Pvt. Ltd",
         "designation": "Application Engineer",
-        "achievement": "Optimized the performance of the application by 30% by refactoring the code and implementing the best practices.",
+        "achievement": "Migrated legacy app to Vue 2 for better UX and maintainability. Built full-stack app with Vue 3, TypeScript, .NET 8, Sitecore, and Solr. Delivered secure MVP using React.js, Google OAuth, and CASA standards. Boosted performance with service workers.",
         "startDate": "1st Jan,2023",
         "endDate": "Present",
         "location": "Mohali,Punjab - India"

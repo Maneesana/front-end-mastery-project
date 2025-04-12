@@ -4,6 +4,7 @@ import portfolioData from '../../public/my-portfolio.json';
 import Image from 'next/image';
 import { useState } from 'react';
 import TypingAnimation from './TypingAnimation';
+import Link from 'next/link';
 
 const Introduction = () => {
   const developerName = portfolioData.developerName;
@@ -18,6 +19,19 @@ const Introduction = () => {
   const handleNameComplete = () => {
     setShowRole(true);
   };
+  const email = "maneesanamaibamsingh@gmail.com";
+  const subject = "Inquiry from Website";
+  const body = `
+  Hi [Your Name],
+
+  I am interested in hiring you for a project. Please let me know how we can proceed.
+
+  Thanks!
+  [Your Name]
+  `;
+  const hireMeMailTo =`mailto:${email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(
+        body
+      )}`
 
   return (
     <>
@@ -58,7 +72,9 @@ const Introduction = () => {
             <p className="p-2 w-full md:w-[600px] text-[16px] md:text-[20px] mb-4 text-wrap leading-relaxed text-gray-800 dark:text-gray-200">
               {developeProfileDescription}
             </p>
-            <PFLButton>Hire Me</PFLButton>
+            <Link href={hireMeMailTo}>
+              <PFLButton>Hire Me</PFLButton>            
+            </Link>
           </div>
           <div className="bg-slate-500 dark:bg-slate-200 p-1 rounded-md flex flex-col items-center justify-center mt-8 md:mt-0 w-full md:w-auto">
             <Image
