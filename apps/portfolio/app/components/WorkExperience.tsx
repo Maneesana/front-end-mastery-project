@@ -13,7 +13,7 @@ const WorkExperience = () => {
     variant: FilledCircleConnectorVariants;
   }) => {
     const circleCSS =
-      ' p-3 mt-6 outline-dashed  outline-[3px] outline-offset-[7px] w-[30px] h-[30px] rounded-full';
+      'p-3 mt-6 outline-dashed outline-[3px] outline-offset-[7px] w-[30px] h-[30px] rounded-full';
     return (
       <div
         style={{
@@ -25,7 +25,7 @@ const WorkExperience = () => {
   };
   const DashedConnectionLine = () => {
     return (
-      <div className="absolute top-[65px] left-[48.825%] h-[160px] border-l-2 border-dashed border-white"></div>
+      <div className="absolute top-[65px] left-[48.825%] h-[160px] border-l-2 border-dashed border-white hidden md:block"></div>
     );
   };
 
@@ -37,10 +37,9 @@ const WorkExperience = () => {
     description: string;
   }) {
     return (
-      <div className="max-w-[400px]">
-        <h4 className="text-[35px] font-semibold mb-1">{title}</h4>
-
-        <p className="text-[20px] leading-relaxed text-wrap h-auto py-1">
+      <div className="max-w-full md:max-w-[400px]">
+        <h4 className="text-[25px] md:text-[35px] font-semibold mb-1 text-center md:text-left">{title}</h4>
+        <p className="text-[16px] md:text-[20px] leading-relaxed text-wrap h-auto py-1 text-center md:text-left">
           {description}
         </p>
       </div>
@@ -64,7 +63,7 @@ const WorkExperience = () => {
   }) => {
     return (
       <div className="mb-[35px]">
-        <div className="w-full flex items-start justify-around gap-2 p-2 my-2">
+        <div className="w-full flex flex-col md:flex-row items-center justify-around gap-8 md:gap-2 p-2 my-2">
           <WorkExperienceJobDescription
             title={jobTitleAndLocation}
             description={jobDuration}
@@ -83,12 +82,12 @@ const WorkExperience = () => {
   };
   return (
     <>
-      <div className="">
-        <h3 className="text-[65px] font-bold text-center">
+      <div className="px-4 md:px-6 lg:px-8">
+        <h3 className="text-[40px] md:text-[65px] font-bold text-center">
           My <span className="text-portfolio-highlight">Work Experience</span>
         </h3>
 
-        <div className="mt-20">
+        <div className="mt-10 md:mt-20">
           {workExperienceJobData.map((exp, i) => {
             return (
               <RectangularExperienceCommonWidget
