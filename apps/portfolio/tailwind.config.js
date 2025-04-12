@@ -35,6 +35,8 @@ module.exports = {
       },
 
       fontFamily: {
+        sans: ['JetBrains Mono', 'monospace'],
+        mono: ['JetBrains Mono', 'monospace'],
         poppins: ['Poppins', 'sans-serif'],
       },
       colors: {
