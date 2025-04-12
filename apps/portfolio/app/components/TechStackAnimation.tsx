@@ -68,19 +68,19 @@ const TechStackAnimation = () => {
     },
   ];
   return (
-    <>
-      <h3 className="text-[65px] font-bold text-center my-12">
+    <div className="px-4 md:px-6 lg:px-8">
+      <h3 className="text-[40px] md:text-[65px] font-bold text-center my-8 md:my-12">
         My <span className="text-portfolio-highlight">Tech Stack</span>
       </h3>
-      <div className="bg-[#F2F4F7] p-6 rounded-md">
-        <div className="flex flex-col gap-6 justify-center items-center">
+      <div className="bg-[#F2F4F7] p-4 md:p-6 rounded-md">
+        <div className="flex flex-col gap-4 md:gap-6 justify-center items-center">
           <RightToLeftAnimation>
-            {data.slice(0, 8).map((item) => {
+            {data.slice(0,8).map((item) => {
               return (
                 <Image
                   key={item.src}
                   src={item.src}
-                  className="p-3 hover:animate-bouncy-shaky cursor-pointer"
+                  className="p-2 md:p-3 hover:animate-bouncy-shaky cursor-pointer w-[100px] h-[100px] md:w-[150px] md:h-[145px]"
                   alt={item.alt}
                   width="150"
                   height="145"
@@ -89,12 +89,12 @@ const TechStackAnimation = () => {
             })}
           </RightToLeftAnimation>
           <RightToLeftAnimation>
-            {data.slice(6).map((item) => {
+            {data.slice(8).map((item) => {
               return (
                 <Image
                   key={item.src}
                   src={item.src}
-                  className=" p-3 hover:animate-bouncy-shaky cursor-pointer"
+                  className="p-2 md:p-3 hover:animate-bouncy-shaky cursor-pointer w-[100px] h-[100px] md:w-[150px] md:h-[145px]"
                   alt={item.alt}
                   width="150"
                   height="145"
@@ -104,7 +104,7 @@ const TechStackAnimation = () => {
           </RightToLeftAnimation>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 

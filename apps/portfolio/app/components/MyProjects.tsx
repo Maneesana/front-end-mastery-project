@@ -46,15 +46,15 @@ const MyProjects = () => {
   };
 
   return (
-    <div id="projects">
+    <div id="projects" className="px-4 md:px-6 lg:px-8">
       <div className="my-6 mb-12">
-        <h3 className="text-center text-[65px] font-bold mb-4">My Projects</h3>
-        <p className="text-xl text-center text-balance">
+        <h3 className="text-center text-[40px] md:text-[65px] font-bold mb-4">My Projects</h3>
+        <p className="text-lg md:text-xl text-center text-balance px-4 md:px-0">
           {portfolioData.projectBrief}
         </p>
       </div>
 
-      <div className="flex items-center justify-center gap-2  mb-2">
+      <div className="flex flex-wrap items-center justify-center gap-2 mb-4">
         {portfolioData.projectsTechTags.slice(0, 10).map((tag, buttonIndex) => {
           return (
             <PFLButton
@@ -72,7 +72,7 @@ const MyProjects = () => {
         })}
       </div>
 
-      <div className="flex items-center justify-center gap-2  mb-2">
+      <div className="flex flex-wrap items-center justify-center gap-2 mb-8">
         {portfolioData.projectsTechTags.slice(10).map((tag, buttonIndex) => {
           return (
             <PFLButton
@@ -90,23 +90,25 @@ const MyProjects = () => {
         })}
       </div>
 
-      <div className="flex items-center justify-center gap-4">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
         {projectData.map((project) => {
           return (
-            <Link href={project.projectUrl} target="_blank" key={project.id}>
-              <ProjectCard
-                projectDescription={project.description}
-                projectImageUrl={project.projectImageUrl}
-                projectName={project.title}
-              />
+            <Link href={project.projectUrl} target="_blank" key={project.id} className="block h-full">
+              <div className="h-full">
+                <ProjectCard
+                  projectDescription={project.description}
+                  projectImageUrl={project.projectImageUrl}
+                  projectName={project.title}
+                />
+              </div>
             </Link>
           );
         })}
       </div>
 
       {projectData.length === 0 && (
-        <p className="text-center text-2xl mt-10">
-          There is currently no project for the selected technology right now.
+        <p className="text-center text-xl md:text-2xl mt-10">
+          No projects are currently available for the selected technology.
         </p>
       )}
     </div>

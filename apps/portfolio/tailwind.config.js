@@ -5,6 +5,7 @@ module.exports = {
     './pages/**/*.{js,ts,jsx,tsx,mdx}',
     './components/**/*.{js,ts,jsx,tsx,mdx}',
   ],
+  darkMode: 'class',
   theme: {
     screens: {
       sm: '300px',
@@ -34,11 +35,15 @@ module.exports = {
       },
 
       fontFamily: {
+        sans: ['JetBrains Mono', 'monospace'],
+        mono: ['JetBrains Mono', 'monospace'],
         poppins: ['Poppins', 'sans-serif'],
       },
       colors: {
         'portfolio-dark-background': '#1E1E1E',
+        'portfolio-light-background': '#FFFFFF',
         'portfolio-foreground-light': '#FFF',
+        'portfolio-foreground-dark': '#1E1E1E',
         'portfolio-highlight': '#FD6F00',
 
         purple: '#7e5bef',

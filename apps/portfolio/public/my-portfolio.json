@@ -3,85 +3,78 @@
   "developerRoleName": "Full Stack Developer",
   "developerProfilePictureUrl": "/profile/developer-profile.jpg",
 
-  "developerBriefDetails": "I am a Full Stack Developer with 3 years of experience in developing web applications using PHP, MySQL, HTML, CSS, JavaScript, jQuery, AJAX, JSON, XML, Bootstrap, AngularJS, NodeJS, ExpressJS, MongoDB, RESTful API, Web Services, etc.",
+  "developerBriefDetails": "Passionate about building performant, scalable, and secure web applications — crafted for seamless user experiences and trusted by businesses to deliver results.",
   "aboutMe": {
     "picture": "/profile/about-me-picture.jpg",
-    "details": "I am a Full Stack Developer. I have 3 years of experience in developing web applications using PHP, MySQL, HTML, CSS, JavaScript, jQuery, AJAX, JSON, XML, Bootstrap, AngularJS, NodeJS, ExpressJS, MongoDB, RESTful API, Web Services, etc.",
+    "details": "With over 2 years of experience in frontend and full-stack development, I specialize in building modern web applications using technologies like React, Vue.js, TypeScript, and .NET Core. I focus on delivering clean, responsive user interfaces and efficient backend systems that enhance performance and usability.",
     "skills": [
       {
+        "name": "JavaScript/Typescript",
+        "level": "90"
+      },
+      {
+        "name": "Vue JS",
+        "level": "85"
+      },
+      {
         "name": "React JS",
-        "level": "60"
+        "level": "80"
       },
       {
-        "name": "Node JS",
-        "level": "60"
+        "name": "C#",
+        "level": "75"
       },
       {
-        "name": "Typescript JS",
-        "level": "60"
+        "name": "ASP.NET",
+        "level": "70"
       },
       {
-        "name": "GraphQL",
-        "level": "60"
-      },
-      {
-        "name": "Docker",
-        "level": "60"
-      },
-      {
-        "name": "PostgresQL",
-        "level": "60"
+        "name": "SQL Server",
+        "level": "68"
       },
       {
         "name": "Nuxt JS",
         "level": "60"
       },
       {
-        "name": "C#",
-        "level": "60"
+        "name": "PostgresQL",
+        "level": "50"
       },
+      {
+        "name": "GraphQL",
+        "level": "45"
+      },
+      {
+        "name": "Docker",
+        "level": "40"
+      },          
       {
         "name": "C++",
-        "level": "60"
-      },
-      {
-        "name": "ASP .NET",
-        "level": "60"
-      },
-      {
-        "name": "Vue JS",
-        "level": "60"
+        "level": "30"
       }
+   
+     
     ]
   },
   "workExperience": {
     "jobs": [
       {
-        "companyName": "Company 1",
+        "companyName": "Covalience Pvt. Ltd",
         "designation": "Application Engineer",
         "achievement": "Optimized the performance of the application by 30% by refactoring the code and implementing the best practices.",
         "startDate": "1st Jan,2023",
         "endDate": "Present",
-        "location": "Location 2"
-      },
-      {
-        "companyName": "Company 2 ",
-        "designation": "Software Engineer",
-        "achievement": "Optimized the performance of the application by 30% by refactoring the code and implementing the best practices.",
-        "startDate": "1st Jun,2023",
-        "endDate": "Present",
-        "location": "Location 2"
+        "location": "Mohali,Punjab - India"
       }
+      
     ]
   },
   "projectsTechTags": [
-    "All",
-    "Front-end",
-    "Back-end",
-    "Full-stack",
+    "All",   
     "React JS",
     "Node JS",
-    "Typescript JS",
+    "Javascript",
+    "Typescript",
     "GraphQL",
     "Docker",
     "PostgresQL",
@@ -91,23 +84,31 @@
     "ASP .NET",
     "Vue JS"
   ],
-  "projectBrief": "I am familiar with the following technologies: React JS, Node JS, Typescript JS, GraphQL, Docker, PostgresQL, Nuxt JS, C#, C++, ASP .NET, Vue JS, etc. I have worked on the following projects: Blog Post, E-commerce, etc",
+  "projectBrief": "",
   "projects": [
     {
-      "tags": ["Front-end", "Back-end"],
-      "title": "Blog Post",
-      "description": "A blog post application where user can create, read, update and delete blog posts.",
-      "technologies": "React JS, Node JS, Express JS, MongoDB, RESTful API, Web Services, etc.",
+      "tags": ["Javascript","React JS","C++","Docker","PostgresQL"],
+      "title": "Video Streaming Application",
+      "description": "Built a scalable video streaming app with React JS & C++, featuring adaptive streaming and real-time analytics.",
+      "technologies": "React JS,C++,Oat++",
       "projectImageUrl": "/github.svg",
-      "projectUrl": "https://github.com"
+      "projectUrl": "https://github.com/Maneesana/video-streaming-cpp-backend"
     },
     {
-      "tags": ["Front-end", "Back-end"],
-      "title": "Blog Post",
+      "tags": ["Vue JS","GraphQL","Typescript"],
+      "title": "Web Blog Post",
       "description": "A blog post application where user can create, read, update and delete blog posts.",
-      "technologies": "React JS, Node JS, Express JS, MongoDB, RESTful API, Web Services, etc.",
+      "technologies": "Vue JS, GraphQL,MongoDB, RESTful API",
       "projectImageUrl": "/github.svg",
-      "projectUrl": "https://github.com/Maneesana/nuxt-js-poc-hm"
+      "projectUrl": "https://github.com/Maneesana/web-blog-app"
+    },
+    {
+      "tags": ["Node JS","React JS","Javascript","Typescript"],
+      "title": "Social Media App",
+      "description": "The app allows users to create accounts, connect with friends, share posts, and interact with others through comments, likes, and instant messaging.",
+      "technologies": "React JS, Node JS,GraphQL,MongoDB, RESTful API",
+      "projectImageUrl": "/github.svg",
+      "projectUrl": "https://github.com/Maneesana/social-media-app"
     }
   ],
   "socialLinks": {
