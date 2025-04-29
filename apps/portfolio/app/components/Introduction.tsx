@@ -19,8 +19,8 @@ const Introduction = () => {
   const handleNameComplete = () => {
     setShowRole(true);
   };
-  const email = "maneesanamaibamsingh@gmail.com";
-  const subject = "Inquiry from Website";
+
+  const subject = 'Inquiry from Website';
   const body = `
   Hi [Your Name],
 
@@ -29,9 +29,9 @@ const Introduction = () => {
   Thanks!
   [Your Name]
   `;
-  const hireMeMailTo =`mailto:${email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(
-        body
-      )}`
+  const hireMeMailTo = `mailto:${portfolioData.hireMeEmail}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(
+    body
+  )}`;
 
   return (
     <>
@@ -73,7 +73,7 @@ const Introduction = () => {
               {developeProfileDescription}
             </p>
             <Link href={hireMeMailTo}>
-              <PFLButton>Hire Me</PFLButton>            
+              <PFLButton>Hire Me</PFLButton>
             </Link>
           </div>
           <div className="bg-slate-500 dark:bg-slate-200 p-1 rounded-md flex flex-col items-center justify-center mt-8 md:mt-0 w-full md:w-auto">
