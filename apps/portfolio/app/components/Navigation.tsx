@@ -19,7 +19,7 @@ const Navigation = () => {
   };
 
   const openBlog = () => {
-    const URL = "http://documentation.maibammaneesanasingh.studio/"
+    const URL = "https://docs.mmaneesanasingh.online/"
     window.open(URL, "_blank");
     setIsMenuOpen(false); // Close menu after clicking a link
   }
