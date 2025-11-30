@@ -49,7 +49,7 @@
         "level": "40"
       },
       {
-        "name": "C++",
+        "name": "C/C++",
         "level": "30"
       }
     ]
@@ -77,14 +77,20 @@
     "PostgresQL",
     "Nuxt JS",
     "C#",
-    "C++",
+    "C/C++",
     "ASP .NET",
     "Vue JS"
   ],
   "projectBrief": "",
   "projects": [
     {
-      "tags": ["Javascript", "React JS", "C++", "Docker", "PostgresQL"],
+      "tags": [
+        "Javascript",
+        "React JS",
+        "C/C++",
+        "Docker",
+        "PostgresQL"
+      ],
       "title": "Video Streaming Application",
       "description": "Built a scalable video streaming app with React JS & C++, featuring adaptive streaming and real-time analytics.",
       "technologies": "React JS,C++,Oat++",
@@ -92,7 +98,11 @@
       "projectUrl": "https://github.com/Maneesana/video-streaming-cpp-backend"
     },
     {
-      "tags": ["Vue JS", "GraphQL", "Typescript"],
+      "tags": [
+        "Vue JS",
+        "GraphQL",
+        "Typescript"
+      ],
       "title": "Web Blog Post",
       "description": "A blog post application where user can create, read, update and delete blog posts.",
       "technologies": "Vue JS, GraphQL,MongoDB, RESTful API",
@@ -100,7 +110,12 @@
       "projectUrl": "https://github.com/Maneesana/web-blog-app"
     },
     {
-      "tags": ["Node JS", "React JS", "Javascript", "Typescript"],
+      "tags": [
+        "Node JS",
+        "React JS",
+        "Javascript",
+        "Typescript"
+      ],
       "title": "Social Media App",
       "description": "The app allows users to create accounts, connect with friends, share posts, and interact with others through comments, likes, and instant messaging.",
       "technologies": "React JS, Node JS,GraphQL,MongoDB, RESTful API",
